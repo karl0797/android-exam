@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowFullInformation.ActivityShowFullInformation">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgound"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Full Information"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="-30dp"
+        android:layout_below="@+id/linearLayout"
+        android:id="@+id/medicine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        app:cardElevation="5dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Profile_Name"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Karl Ernel Fernandez"
+                    android:textColor="@color/grey"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey"
+                    android:text="Personal Information"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/Profile_Age"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Age"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_calendar"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/Profile_bday"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Birtday"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_calendar"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey"
+                    android:text="Address and Contact Information"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/Profile_Email"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Email Address"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_email"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:id="@+id/Profile_MNumber"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_phone"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/Profile_Address"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Address"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_address"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey"
+                    android:text="Contact Person"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/Profile_CPerson"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Name"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_person"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:id="@+id/Profile_CPersonNumber"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_radius_white"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/ic_phone"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:background="@drawable/rectangle_radius_blue_3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:backgroundTint="@color/LightRed"
+        android:id="@+id/Profile_fab_back"/>
+
+
+</RelativeLayout>
